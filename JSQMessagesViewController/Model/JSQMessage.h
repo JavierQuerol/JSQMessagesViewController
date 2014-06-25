@@ -41,6 +41,7 @@
  *  The date that the message was sent. This value must not be `nil`.
  */
 @property (copy, nonatomic) NSDate *date;
+@property (strong, nonatomic) NSNumber *identifier;
 
 #pragma mark - Initialization
 
@@ -65,7 +66,8 @@
  */
 - (instancetype)initWithText:(NSString *)text
                       sender:(NSString *)sender
-                        date:(NSDate *)date;
+                        date:(NSDate *)date
+				  identifier:(NSNumber *)identifier;
 
 /**
  *  Returns a boolean value that indicates whether a given message is equal to the receiver.

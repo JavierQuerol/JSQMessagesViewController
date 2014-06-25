@@ -47,4 +47,6 @@
  */
 - (NSDate *)date;
 
+- (NSNumber *)identifier;
+
 @end
